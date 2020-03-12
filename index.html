@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+       <meta charset="UTF-08">
+       <title>Employee Data Management</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+       <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+       <script src="assets/app.js"></script>
+       
+    </head>
+    <body>
+        <div class="container">
+    <div class="jumbotron" style="background-color: rgb(18, 18, 19); color:white;">
+        <h1 class="text-center">Train Schedule app</h1>
+        <h2 class="text-center">Displaying the train schedule app</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+        <br>
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong><i class="fa fa-list-alt"></i>Current Employees</strong></h3>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th id ="trains">Train Name</th>
+                        <th id ="destination"> Destination</th>
+                        <th id = "frequency"> Frequency(min)</th>
+                        <th id ="arrival"> Next Arrival</th>
+                        <th id ="minutes"> Minutes away</th>
+                        
+                    </tr>
+                </thead>
+            </table>
+            
+
+
+
+
+
+
+
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title"><strong><i class="fa fa-list-alt"></i>Add Train</strong></h3>
+            </div>
+          <div class="panel-body">
+              <!-- html heading for the inputs-->
+              <form role="form">
+                  <div class="form-group">
+                      <label for="employee-name">Train Name</label>
+                      <br>
+                      <input type="text" class="form-control" id="add-train" style= width:650px;>
+                  </div>
+        <div class="form-group">
+            <label for="role">Destination: </label>
+            <br>
+            <input type="text" class="form-control" id="destination" style= width:650px; >
+        </div>
+        <div class="form-group">
+            <label for="start-date">First Train time (HH:mm - millitary time):</label>
+            <input type="text" class="form-control" id="train-time" style= width:684px;>
+        </div>
+        <div class="form-group">
+            <label for="montly-rate">Frequency (min)</label>
+            <input type="text" class="form-control" id="freq-min" style= width:684px;>
+        </div>
+        <button type="submit" class="btn btn-default" id="search"> Submit </button>
+
+              </form>
+              
+
+    </body>
+    </html>
